@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Conheça Gláucia Gianet, psicóloga especialista em EMDR e TCC pelo Instituto Aaron Beck. A história de uma profissional que une técnica, acolhimento e resultado real."/>
+  <title>Conheça Gláucia Gianet | Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{color-scheme:light only;}
+    html,body{color-scheme:light only!important;background-color:#FFFFFF!important}
+    :root{
+      --bg:#FFFFFF;--bg-alt:#FAF8F5;--bg-dark:#1A1410;
+      --accent:#9B7B6E;--accent-lt:#F5ECE8;--accent-dk:#7A5F54;
+      --text:#1A1410;--text-muted:#6B6560;--text-light:#9A9390;
+      --border:#EDE5E0;--ff-d:'Cormorant Garamond',Georgia,serif;
+      --ff-b:'DM Sans',system-ui,sans-serif;--max:1200px;
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:var(--ff-b);color:var(--text)!important;background:#FFFFFF!important;line-height:1.6;-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 48px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 30px;font-family:var(--ff-b);font-size:12px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;transition:all .22s;cursor:pointer;border:none;border-radius:3px}
+    .btn--p{background:var(--accent);color:#fff}
+    .btn--p:hover{background:var(--accent-dk)}
+    .btn--g{background:transparent;color:var(--text);border:1.5px solid var(--border)}
+    .btn--g:hover{border-color:var(--accent);color:var(--accent)}
+    /* NAV */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.97)!important;backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
+    .nav.sc{box-shadow:0 4px 24px rgba(0,0,0,.06)}
+    .nav-in{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:var(--max);margin:0 auto;padding:0 48px}
+    .nav-logo{font-family:var(--ff-d);font-size:22px;font-weight:500;color:var(--text)!important}
+    .nav-logo em{font-style:italic;font-weight:300;color:var(--accent)}
+    .nav-crp{font-size:10px;color:var(--text-light);letter-spacing:.4px;margin-top:1px}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-size:11px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);transition:color .2s}
+    .nav-links a:hover{color:var(--accent)}
+    .nav-cta{background:var(--accent)!important;color:#fff!important;padding:9px 20px;border-radius:3px}
+    /* ARTICLE */
+    .art-hero{padding:140px 0 64px;background:var(--bg-alt)!important;text-align:center}
+    .art-tag{display:inline-block;font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:2px;color:var(--accent);background:var(--accent-lt);padding:6px 14px;border-radius:2px;margin-bottom:20px}
+    .art-date{font-size:12px;color:var(--text-light);margin-bottom:20px}
+    .art-title{font-family:var(--ff-d);font-size:clamp(32px,4vw,54px);font-weight:400;line-height:1.15;color:var(--text)!important;max-width:760px;margin:0 auto 24px}
+    .art-title em{font-style:italic;color:var(--accent);font-weight:300}
+    .art-intro{font-size:18px;line-height:1.7;color:var(--text-muted);max-width:620px;margin:0 auto;font-weight:300}
+    .art-img{max-height:520px;overflow:hidden;margin-bottom:0}
+    .art-img img{width:100%;height:520px;object-fit:cover;object-position:center 20%}
+    .art-body{max-width:720px;margin:0 auto;padding:72px 48px}
+    .art-body h2{font-family:var(--ff-d);font-size:28px;font-weight:500;color:var(--text)!important;margin:48px 0 16px;line-height:1.25}
+    .art-body h3{font-family:var(--ff-d);font-size:22px;font-weight:500;color:var(--text)!important;margin:32px 0 12px}
+    .art-body p{font-size:16px;line-height:1.82;color:var(--text-muted);margin-bottom:20px;font-weight:300}
+    .art-body strong{font-weight:500;color:var(--text)}
+    .art-quote{border-left:3px solid var(--accent);padding:20px 28px;margin:36px 0;background:var(--accent-lt)!important;border-radius:0 3px 3px 0}
+    .art-quote p{font-family:var(--ff-d);font-size:20px;font-style:italic;font-weight:300;color:var(--text)!important;margin:0;line-height:1.55}
+    .art-cta{background:var(--bg-dark)!important;padding:64px 48px;text-align:center;margin-top:64px}
+    .art-cta h3{font-family:var(--ff-d);font-size:32px;font-weight:300;color:#fff!important;margin-bottom:14px}
+    .art-cta h3 em{font-style:italic;color:rgba(155,123,110,.8)}
+    .art-cta p{font-size:15px;color:rgba(255,255,255,.5);margin-bottom:32px;font-weight:300}
+    .art-back{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:0}
+    .art-back:hover{color:var(--accent)}
+    .footer{background:#110D0B!important;padding:48px 0 32px}
+    .foot-in{display:flex;justify-content:space-between;align-items:center}
+    .foot-name{font-family:var(--ff-d);font-size:20px;font-weight:400;color:#fff!important}
+    .foot-name em{font-style:italic;font-weight:300;color:rgba(155,123,110,.7)}
+    .foot-copy{font-size:12px;color:rgba(255,255,255,.2)}
+    .wpp-f{position:fixed;bottom:28px;right:28px;z-index:90;width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.3);transition:transform .2s}
+    .wpp-f:hover{transform:scale(1.1)}
+    .wpp-f svg{width:26px;height:26px;fill:#fff}
+    @media(max-width:768px){.wrap{padding:0 24px}.nav-in{padding:0 24px}.nav-links{display:none}.art-body{padding:48px 24px}.art-hero{padding:110px 24px 48px}.art-cta{padding:48px 24px}.foot-in{flex-direction:column;gap:12px;text-align:center}}
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <div>
+      <a href="/index.html" class="nav-logo">Gláucia <em>Gianet</em></a>
+      <p class="nav-crp">Psicóloga · CRP 04/59327</p>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/index.html#emdr">EMDR</a></li>
+      <li><a href="/index.html#servicos">Serviços</a></li>
+      <li><a href="/index.html#sobre">Sobre</a></li>
+      <li><a href="/index.html#avaliacoes">Avaliações</a></li>
+      <li><a href="/index.html#blog">Blog</a></li>
+      <li><a href="https://wa.me/5531997834890?text=Olá%2C%20Gláucia.%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" class="nav-cta">Agendar</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="art-hero">
+  <div class="wrap">
+    <span class="art-tag">Quem sou eu</span>
+    <div class="art-date">Maio de 2026</div>
+    <h1 class="art-title">Conheça Gláucia Gianet: a psicóloga por trás do <em>EMDR que transforma vidas</em></h1>
+    <p class="art-intro">Formada pela UEL, especialista em EMDR e TCC pelo Instituto Aaron Beck, Gláucia construiu um consultório que mistura técnica, acolhimento e resultado real. Neste artigo, ela conta como chegou até aqui.</p>
+  </div>
+</section>
+
+<div class="art-img">
+  <img src="/img/img-6.jpg" alt="Gláucia Gianet"/>
+</div>
+
+<div class="art-body">
+  <a href="/index.html#blog" class="art-back">← Voltar ao blog</a>
+
+  <h2>Uma escolha que nasceu da vivência</h2>
+  <p>Antes de ser psicóloga, Gláucia Gianet foi uma pessoa que carregou coisas que não sabia nomear. Ansiedade sem causa aparente, padrões que se repetiam, uma sensação difusa de que algo não estava certo — mas sem conseguir identificar de onde vinha.</p>
+  <p>"Eu me tornei psicóloga porque precisava entender o que acontecia dentro de mim. E quando fui buscar respostas, percebi que muita gente estava na mesma situação: sofrendo sem conseguir colocar em palavras o que sentia," conta Gláucia.</p>
+  <p>Essa vivência pessoal moldou a profissional que ela se tornou: alguém que não atende de longe, mas com presença. Que não oferece fórmulas, mas escuta qualificada. Que não apenas diagnostica, mas acompanha.</p>
+
+  <div class="art-quote"><p>"Eu não escolhi a psicologia pelo mercado ou pela estabilidade. Escolhi porque precisava — e porque sei o que é estar do outro lado."</p></div>
+
+  <h2>Formação e especializações</h2>
+  <p>Gláucia é formada pela Universidade Estadual de Londrina (UEL), com aperfeiçoamento em Terapia Cognitivo-Comportamental pelo <strong>Instituto Aaron Beck</strong>, com foco em Transtornos de Personalidade. Ao longo dos anos, construiu uma formação robusta que integra diferentes abordagens baseadas em evidências:</p>
+  <p><strong>EMDR (Especialidade principal):</strong> A técnica que se tornou o centro do seu trabalho clínico. Reconhecida pela OMS para o tratamento de traumas, ansiedade, TEPT e questões emocionais profundas.</p>
+  <p><strong>TCC — Terapia Cognitivo-Comportamental:</strong> Abordagem amplamente validada pela ciência para ansiedade, depressão, fobias e transtornos de personalidade.</p>
+  <p><strong>Neuropsicologia:</strong> Avaliação e acompanhamento com base em neurociência, integrando psicoeducação neurobiológica ao processo terapêutico.</p>
+  <p><strong>Psicofarmacologia Clínica:</strong> Formação que permite um atendimento integrado, compreendendo a relação entre medicação e saúde mental.</p>
+
+  <h2>Por que o EMDR se tornou o centro do seu trabalho</h2>
+  <p>Gláucia conheceu o EMDR ainda na pós-graduação, mas foi na prática clínica que entendeu o seu poder real. "Vi pessoas que passavam anos em terapia convencional sem conseguir avançar em determinadas questões. Com o EMDR, em poucas sessões, essas memórias perdiam a carga emocional que carregavam. Não é mágica — é neurociência aplicada."</p>
+  <p>O EMDR trabalha com o reprocessamento de memórias traumáticas armazenadas de forma desorganizada no cérebro. Por meio de estimulação bilateral — movimentos oculares, toques alternados ou sons — o cérebro consegue processar essas memórias da mesma forma que processa experiências comuns, reduzindo o sofrimento que elas causam.</p>
+
+  <div class="art-quote"><p>"O EMDR não apaga o que você viveu. Ele transforma a forma como esse passado vive dentro de você."</p></div>
+
+  <h2>Mais de 5.000 atendimentos: o que ela aprendeu</h2>
+  <p>Com mais de 5.000 atendimentos realizados e nota 5,0 no Google, Gláucia acumulou experiência clínica em casos de ansiedade severa, traumas de infância, depressão, relacionamentos disfuncionais, sobrecarga materna e esgotamento emocional.</p>
+  <p>"O que eu aprendi com tudo isso é que as pessoas chegam até mim achando que o problema é delas — que elas são difíceis, exageradas, que sentem demais. E o meu trabalho começa por mostrar que não. Que há uma origem para tudo aquilo. E que isso tem solução."</p>
+
+  <h2>Como ela atende</h2>
+  <p>Gláucia realiza atendimentos <strong>online para todo o Brasil e exterior</strong>, além de atendimento presencial em Minas Gerais. As sessões têm duração média de 50 minutos e podem ser semanais ou quinzenais, dependendo do processo de cada pessoa.</p>
+  <p>O primeiro contato é feito via WhatsApp, onde ela conversa brevemente sobre o que a pessoa está sentindo antes de agendar a primeira sessão. "Acredito que esse contato inicial já faz parte do cuidado. A pessoa precisa sentir, desde o primeiro momento, que está sendo vista."</p>
+</div>
+
+<div class="art-cta">
+  <div class="wrap">
+    <h3>Pronta para dar o <em>primeiro passo?</em></h3>
+    <p>Agende uma conversa com Gláucia e entenda como o processo funciona para o seu caso.</p>
+    <a href="https://wa.me/5531997834890?text=Olá%2C%20Gláucia.%20Li%20o%20artigo%20sobre%20você%20e%20gostaria%20de%20agendar%20uma%20conversa." target="_blank" class="btn btn--p">Agendar via WhatsApp</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-in">
+      <div class="foot-name">Gláucia <em>Gianet</em> &nbsp;·&nbsp; <span style="font-family:var(--ff-b);font-size:12px;color:rgba(255,255,255,.3);font-weight:300">Psicóloga CRP 04/59327</span></div>
+      <p class="foot-copy">© 2026 Gláucia Gianet. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5531997834890" target="_blank" class="wpp-f" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script>const nv=document.getElementById('nav');window.addEventListener('scroll',()=>nv.classList.toggle('sc',window.scrollY>40));</script>
+</body>
+</html>
