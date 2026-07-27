@@ -619,5 +619,6 @@ function cm(){mm.classList.remove('open')}
 const obs=new IntersectionObserver((e)=>{e.forEach(en=>{if(en.isIntersecting){en.target.style.opacity='1';en.target.style.transform='translateY(0)'}})},{threshold:0.12});
 document.querySelectorAll('.card,.test-c,.blog-c,.proc-step,.spec-i,.faq-i').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(22px)';el.style.transition='opacity .5s ease,transform .5s ease';obs.observe(el)});
 </script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
